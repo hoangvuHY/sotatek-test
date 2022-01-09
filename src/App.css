@@ -29,7 +29,7 @@ textarea.ant-input {
 .app .todo-app {
   display: flex;
   border: 1px solid rgb(1, 0, 0);
-  width: 350px;
+  width: 40%;
   padding: 20px;
 }
 .create-app,
@@ -56,7 +56,7 @@ textarea.ant-input {
 }
 
 .todo-list {
-  width: 500px;
+  width: 50%;
   padding: 20px;
   border: 1px solid rgb(1, 0, 0);
   margin-left: -1px;
@@ -161,4 +161,18 @@ textarea.ant-input {
   color: #c2bebe;
   margin-top: 30px;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+  .todo-app,
+  .todo-list {
+    width: 100% !important;
+  }
+  .todo-list {
+    margin-left: 0;
+    margin-top: -1px;
+  }
 }

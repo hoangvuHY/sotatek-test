@@ -1,7 +1,7 @@
 import { Input, notification } from 'antd';
 import { useEffect, useState } from 'react';
 
-import './app.css';
+import './App.css';
 
 import { getTaskList, setToLocalStorage } from './helper';
 import Task from './components/Task';
