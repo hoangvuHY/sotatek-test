@@ -1,38 +1,164 @@
-.App {
+.app {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.ant-input {
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 5px;
+}
+.ant-input::placeholder {
+  color: rgb(26, 26, 26);
+}
+textarea.ant-input {
+  border-color: rgb(26, 26, 26);
+}
+.ant-picker,
+.ant-select {
+  border: 2px solid rgb(26, 26, 26);
+  height: 36px;
+  width: 100%;
+}
+
+.ant-select-arrow {
+  color: rgb(26, 26, 26);
+}
+
+.app .todo-app {
+  display: flex;
+  border: 1px solid rgb(1, 0, 0);
+  width: 350px;
+  padding: 20px;
+}
+.create-app,
+.create-app .ant-select,
+.create-app .ant-btn {
+  width: 100%;
+}
+.title {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.create-app .ant-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.create-app .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-app .date-group,
+.create-app .priority {
+  width: 48%;
+}
+
+.todo-list {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid rgb(1, 0, 0);
+  margin-left: -1px;
+  position: relative;
+}
+.todo-list .task-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid rgb(89, 89, 89);
+  margin-bottom: -1px;
+}
+.todo-list .content {
+  display: flex;
+  align-items: center;
+}
+.todo-list .content .ant-checkbox-wrapper {
+  margin-right: 15px;
+}
+.group-button button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 6px;
+  margin-right: 10px;
+  color: #ffffffe8;
+}
+.group-button .detail {
+  background-color: rgba(119, 136, 68, 0.884);
+}
+
+.group-button .remove {
+  background-color: rgba(255, 0, 0, 0.849);
+}
+
+.task-detail {
+}
+
+.edit-task {
+  border: 1px solid rgb(89, 89, 89);
+  padding: 16px;
+}
+
+.list-task {
+  height: 350px;
+  overflow: scroll;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.bulk-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  background: rgb(190, 190, 190);
+  width: 100%;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  border-top: 1px solid rgb(16, 15, 16);
+}
+.btn-submit,
+.btn-submit:hover,
+.btn-submit:focus {
+  background: rgb(118, 188, 114);
+  border: none;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group button {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  padding: 15px 15px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  height: 20px;
+  margin-left: 15px;
+}
+.done {
+  background: rgb(80, 98, 234);
+}
+.remove {
+  background: rgb(232, 88, 82);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-empty {
+  font-size: 25px;
+  color: #c2bebe;
+  margin-top: 30px;
+  text-align: center;
 }
