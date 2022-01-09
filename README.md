@@ -1,3 +1,22 @@
+## Run app
+
+
+Step 1. Clone repo to your computer with
+
+      git clone https://github.com/hoangvuHY/sotatek-test.git
+
+Step 2. Run in cmd
+      
+      npm install
+      
+      npm start
+
+Step 3. Type the following link in your browser (Chrome) to go to the Login page:
+      
+      http://localhost:3000
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +25,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm install`
 
 ### `npm start`
 
